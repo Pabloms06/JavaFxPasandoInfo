@@ -23,15 +23,17 @@ public class Ventana1Controller {
 			stage.initStyle(StageStyle.UNDECORATED);
 			stage.show();
 
+			//Inicias la ventana 2 desde la que se va a poder leer la informacion que en este caso es BLABLABLABLA
+
 			Ventana2Controller controller = loader.getController();
-			controller.mandarInfoDesdeVentana1("BLABLALBALBLABLALBAB");
+			controller.mandarInfoDesdeVentana1("BLABLALBALBLABLALBAB"); //Mandas la informacion para verla desde ventana2
 			controller.setVentana1(this);
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	public void recibirInformacion(String info){
+	public void recibirInformacion(String info){  // y en este metodo se va a recibir la informacion desde el segundo controlador
 		System.out.println("Informacion recibida en ventana 1 de la ventana 2 = " + info);
 	}
 }

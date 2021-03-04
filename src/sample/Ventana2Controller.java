@@ -7,12 +7,11 @@ import javafx.stage.Stage;
 
 public class Ventana2Controller {
 
-	private Ventana1Controller ventana1Controller;
+	private Ventana1Controller ventana1Controller;   //Inicialización del controlador
 
 	@FXML
 	private Button buttonCerrarVentana;
-	@FXML
-	private Button buttonCerrarApp;
+
 	
 	@FXML
 	private void onButtonCerrarVentanaClicked(ActionEvent event) {
@@ -29,7 +28,7 @@ public class Ventana2Controller {
 		System.out.println("Información enviada: " + info);
 	}
 
-	public void setVentana1(Ventana1Controller ventana1){
+	public void setVentana1(Ventana1Controller ventana1){  //Pasas la información a Controller1  Ventana1Controller
 		ventana1Controller = ventana1;
 		ventana1Controller.recibirInformacion("JAJAJAJJAJA");
 	}
